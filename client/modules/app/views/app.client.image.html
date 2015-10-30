@@ -1,0 +1,13 @@
+<div data-ng-controller="AppController">
+	 <form name="myForm">
+	<input type="file" ngf-select ng-model="image" name="file" accept="image/*" ngf-max-size="2MB" required>
+	  <button ng-disabled="!myForm.$valid" ng-click="upload(image)">Submit</button>
+	  </form>
+	  <div ng-repeat="photo in imageList">
+		<div class="col-md-2">
+			<div class="box-icon">
+				<img class="img-responsive" ng-src={{photo.image}}>
+			</div>	
+		</div>
+	</div>
+</div>
