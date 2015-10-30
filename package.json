@@ -1,6 +1,6 @@
 {
-  "name": "expaus",
-  "description": "expaus",
+  "name": "angular-file-upload-base64",
+  "description": "angular file upload in base 64 format",
   "version": "0.1.0",
   "main": "server",
   "engines": {
@@ -17,5 +17,9 @@
     "mongoose": "3.8.x",
     "request": "^2.44.0",
     "yql": "^1.0.2"
+  },
+  "author": {
+    "name": "sonipandey",
+    "email": "sonipandey.71@gmail.com"
   }
 }
