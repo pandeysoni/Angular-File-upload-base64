@@ -8,8 +8,8 @@ var express = require('express'),
 
 
 app.use(express.static(path.join(__dirname, 'client/')));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ limit: '52428800', extended: true }));
+app.use(bodyParser.json({limit: '52428800'}));
 
 
 /** load routes*/
